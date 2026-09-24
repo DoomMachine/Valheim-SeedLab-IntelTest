@@ -1,0 +1,37 @@
+{
+  "stamp": "DATA-STAMP game-version=1.0.15 network=40 unity=6000.0.75f1 assembly_valheim-sha256=59f53fb55d99d22a33e8ed094eec8d21e9f133543bce92bc3d80dce44033adb1 unityplayer-sha256=4d161e15d8ccdb32eb73262e7a3e0a66f8c175b50a38e22ae5b0e8fb9aea98f3 dumped=2026-09-22 dumper=1.0.0 mode=natives schema=1",
+  "schema": 1,
+  "binFile": "natives-perlin.bin",
+  "binBytes": 3153372,
+  "binSha256": "298de61235af9c3874416e2844b0f33289277ec2feaf4159896da12554ad577e",
+  "blocks": [
+    {
+      "id": "D1-2d",
+      "note": "Spec 03 6.2 D1: abs fold, exact lattice points, 2^24 and beyond, real GetBiome arguments.",
+      "kind": 0,
+      "sampleCount": 24,
+      "byteOffset": 12
+    },
+    {
+      "id": "D1-1d",
+      "note": "Mathf.PerlinNoise1D(x) at the same x values.",
+      "kind": 1,
+      "sampleCount": 24,
+      "byteOffset": 300
+    },
+    {
+      "id": "D2-grid",
+      "note": "x = i*0.0517f - 60f, y = j*0.0517f - 60f, i,j in [0,512).",
+      "kind": 0,
+      "sampleCount": 262144,
+      "byteOffset": 588
+    },
+    {
+      "id": "D3-real-arguments",
+      "note": "The exact arguments world generation feeds Perlin: the four biome-mask offsets over a 7x7 world grid, and GetBaseHeight's six octave scales plus its two +0.123/+0.321 pairs.",
+      "kind": 0,
+      "sampleCount": 588,
+      "byteOffset": 3146316
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    The runtime/resource layer: everything that has to know about THIS machine rather than about
+    Valheim's world generation.
+
+      hardware probe -> resource modes and worker planning -> auto-throttle when the game is running
+      -> the cache root, per-process scratch and durable writes -> the cost estimator with live
+      re-calibration -> the startup self-test that fails closed on an unverified machine.
+
+    DEPENDENCIES: none, on purpose. This project references NO other SeedLab project and NO NuGet
+    package, so both SeedLab.Cli and SeedLab.Web can take it without dragging WorldGen, Render or
+    Search into a web request, and so the self-test can run before any generator type is loaded.
+    Generator-level golden vectors are supplied by the caller through ISelfTestSuite.
+
+    BCL ONLY: Environment, GC.GetGCMemoryInfo, DriveInfo, RuntimeInformation, Process and
+    System.Runtime.Intrinsics.X86. No WMI, no registry, no P/Invoke - it has to behave the same on a
+    laptop, in a container and on arm64.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>SeedLab.Runtime</RootNamespace>
+    <AssemblyName>SeedLab.Runtime</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The recorded self-test vectors. Embedded so they travel with the assembly: a machine that has
+         no groundtruth\ folder must still be able to prove its libm and float evaluation. -->
+    <EmbeddedResource Include="SelfTest\selftest-vectors.txt" />
+  </ItemGroup>
+</Project>

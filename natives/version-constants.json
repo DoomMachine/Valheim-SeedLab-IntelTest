@@ -1,0 +1,19 @@
+{
+  "stamp": "DATA-STAMP game-version=1.0.15 network=40 unity=6000.0.75f1 assembly_valheim-sha256=59f53fb55d99d22a33e8ed094eec8d21e9f133543bce92bc3d80dce44033adb1 unityplayer-sha256=4d161e15d8ccdb32eb73262e7a3e0a66f8c175b50a38e22ae5b0e8fb9aea98f3 dumped=2026-09-22 dumper=1.0.0 mode=assets schema=1",
+  "schema": 1,
+  "gameVersion": "1.0.15",
+  "networkVersion": 40,
+  "worldVersion": 41,
+  "worldGenVersion": 2,
+  "cachedMinimapVersion": 1,
+  "playerVersion": 46,
+  "cachedMinimapWrittenLiteral": 1,
+  "biomeGridTextureSize": 2048,
+  "biomeGridPixelSize": 12,
+  "biomeGridHalfWidth": 1024,
+  "biomeGridHalfPixel": 6,
+  "bits": {
+    "biomeGridPixelSize": "0x41400000",
+    "biomeGridHalfPixel": "0x40C00000"
+  }
+}

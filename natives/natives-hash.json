@@ -1,0 +1,2146 @@
+{
+  "stamp": "DATA-STAMP game-version=1.0.15 network=40 unity=6000.0.75f1 assembly_valheim-sha256=59f53fb55d99d22a33e8ed094eec8d21e9f133543bce92bc3d80dce44033adb1 unityplayer-sha256=4d161e15d8ccdb32eb73262e7a3e0a66f8c175b50a38e22ae5b0e8fb9aea98f3 dumped=2026-09-22 dumper=1.0.0 mode=assets schema=1",
+  "schema": 1,
+  "samples": [
+    {
+      "s": "StoneCircle",
+      "hash": -1587608451,
+      "kind": "location"
+    },
+    {
+      "s": "StartTemple",
+      "hash": -1544986047,
+      "kind": "location"
+    },
+    {
+      "s": "Eikthyrnir",
+      "hash": -316818231,
+      "kind": "location"
+    },
+    {
+      "s": "GoblinKing",
+      "hash": -221799126,
+      "kind": "location"
+    },
+    {
+      "s": "Greydwarf_camp1",
+      "hash": 568268372,
+      "kind": "location"
+    },
+    {
+      "s": "Greydwarf_camp2",
+      "hash": 568268369,
+      "kind": "location"
+    },
+    {
+      "s": "Greydwarf_camp3",
+      "hash": 568268370,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_Greydwarfs",
+      "hash": 1432643682,
+      "kind": "location"
+    },
+    {
+      "s": "Grave1",
+      "hash": -959863594,
+      "kind": "location"
+    },
+    {
+      "s": "SwampRuin1",
+      "hash": 2033007269,
+      "kind": "location"
+    },
+    {
+      "s": "SwampRuin2",
+      "hash": -695876086,
+      "kind": "location"
+    },
+    {
+      "s": "FireHole",
+      "hash": 1778403332,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_Draugr",
+      "hash": 1079444059,
+      "kind": "location"
+    },
+    {
+      "s": "Castle",
+      "hash": -545154654,
+      "kind": "location"
+    },
+    {
+      "s": "Fort1",
+      "hash": -676716778,
+      "kind": "location"
+    },
+    {
+      "s": "xmastree",
+      "hash": 77803945,
+      "kind": "location"
+    },
+    {
+      "s": "GDKing",
+      "hash": 1828406738,
+      "kind": "location"
+    },
+    {
+      "s": "Bonemass",
+      "hash": -146537656,
+      "kind": "location"
+    },
+    {
+      "s": "Crypt2",
+      "hash": -1678967404,
+      "kind": "location"
+    },
+    {
+      "s": "Ruin1",
+      "hash": 768429125,
+      "kind": "location"
+    },
+    {
+      "s": "Ruin2",
+      "hash": 768429122,
+      "kind": "location"
+    },
+    {
+      "s": "Pillar1",
+      "hash": -245626717,
+      "kind": "location"
+    },
+    {
+      "s": "Pillar2",
+      "hash": -245626716,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHouse1",
+      "hash": -244797676,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHouse1_heath",
+      "hash": -178524227,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHouse2_heath",
+      "hash": -178558112,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHouse5_heath",
+      "hash": -178380479,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHouse2",
+      "hash": -244797675,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHouse3",
+      "hash": -244797674,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHouse4",
+      "hash": -244797673,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHouse5",
+      "hash": -244797672,
+      "kind": "location"
+    },
+    {
+      "s": "Ruin3",
+      "hash": 768429123,
+      "kind": "location"
+    },
+    {
+      "s": "GoblinCamp1",
+      "hash": -993959757,
+      "kind": "location"
+    },
+    {
+      "s": "GoblinCamp2",
+      "hash": -993959758,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTower1",
+      "hash": -1822437427,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTower2",
+      "hash": -1822437430,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTower3",
+      "hash": -1822437429,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTower4",
+      "hash": -1822437432,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHenge1",
+      "hash": 1314907899,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHenge2",
+      "hash": 1314907896,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHenge3",
+      "hash": 1314907897,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHenge4",
+      "hash": 1314907894,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHenge5",
+      "hash": 1314907895,
+      "kind": "location"
+    },
+    {
+      "s": "StoneHenge6",
+      "hash": 1314907892,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse1",
+      "hash": -1074625196,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse2",
+      "hash": -1477909723,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse3",
+      "hash": 88174218,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse4",
+      "hash": -671340669,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse5",
+      "hash": 894743272,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse6",
+      "hash": 491458745,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse7",
+      "hash": 2057542686,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse8",
+      "hash": 1298027799,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse9",
+      "hash": -1430855556,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse10",
+      "hash": 1892273636,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse11",
+      "hash": 1892273635,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse12",
+      "hash": 1892273638,
+      "kind": "location"
+    },
+    {
+      "s": "WoodHouse13",
+      "hash": 1892273637,
+      "kind": "location"
+    },
+    {
+      "s": "WoodFarm1",
+      "hash": 344561602,
+      "kind": "location"
+    },
+    {
+      "s": "WoodVillage1",
+      "hash": -1637202988,
+      "kind": "location"
+    },
+    {
+      "s": "TrollCave",
+      "hash": 1306702780,
+      "kind": "location"
+    },
+    {
+      "s": "TrollCave02",
+      "hash": -1965863430,
+      "kind": "location"
+    },
+    {
+      "s": "SunkenCrypt1",
+      "hash": -905944335,
+      "kind": "location"
+    },
+    {
+      "s": "SunkenCrypt2",
+      "hash": 1822939020,
+      "kind": "location"
+    },
+    {
+      "s": "SunkenCrypt3",
+      "hash": 256855079,
+      "kind": "location"
+    },
+    {
+      "s": "SunkenCrypt4",
+      "hash": -1309228862,
+      "kind": "location"
+    },
+    {
+      "s": "Dolmen01",
+      "hash": 259975600,
+      "kind": "location"
+    },
+    {
+      "s": "Dolmen02",
+      "hash": 663260127,
+      "kind": "location"
+    },
+    {
+      "s": "Dolmen03",
+      "hash": -902823814,
+      "kind": "location"
+    },
+    {
+      "s": "Crypt3",
+      "hash": 1049915951,
+      "kind": "location"
+    },
+    {
+      "s": "Crypt4",
+      "hash": -516167990,
+      "kind": "location"
+    },
+    {
+      "s": "InfestedTree01",
+      "hash": 304861589,
+      "kind": "location"
+    },
+    {
+      "s": "SwampHut1",
+      "hash": -2133409326,
+      "kind": "location"
+    },
+    {
+      "s": "SwampHut2",
+      "hash": -2133409329,
+      "kind": "location"
+    },
+    {
+      "s": "SwampHut3",
+      "hash": -2133409328,
+      "kind": "location"
+    },
+    {
+      "s": "SwampHut4",
+      "hash": -2133409323,
+      "kind": "location"
+    },
+    {
+      "s": "SwampHut5",
+      "hash": -2133409322,
+      "kind": "location"
+    },
+    {
+      "s": "SwampWell1",
+      "hash": -78815881,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins04",
+      "hash": 1813954435,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins05",
+      "hash": 1813954436,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins03",
+      "hash": 1813954438,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins07",
+      "hash": 1813954434,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins08",
+      "hash": 1813954431,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins09",
+      "hash": 1813954432,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins10",
+      "hash": 247870498,
+      "kind": "location"
+    },
+    {
+      "s": "Vendor_BlackForest",
+      "hash": -119798395,
+      "kind": "location"
+    },
+    {
+      "s": "ShipSetting01",
+      "hash": 1705714113,
+      "kind": "location"
+    },
+    {
+      "s": "Dragonqueen",
+      "hash": 1225607547,
+      "kind": "location"
+    },
+    {
+      "s": "DrakeNest01",
+      "hash": -1567977830,
+      "kind": "location"
+    },
+    {
+      "s": "Waymarker01",
+      "hash": 1529943656,
+      "kind": "location"
+    },
+    {
+      "s": "Waymarker02",
+      "hash": 1529943655,
+      "kind": "location"
+    },
+    {
+      "s": "AbandonedLogCabin02",
+      "hash": -293637847,
+      "kind": "location"
+    },
+    {
+      "s": "AbandonedLogCabin03",
+      "hash": -293637848,
+      "kind": "location"
+    },
+    {
+      "s": "AbandonedLogCabin04",
+      "hash": -293637841,
+      "kind": "location"
+    },
+    {
+      "s": "MountainGrave01",
+      "hash": -1825328531,
+      "kind": "location"
+    },
+    {
+      "s": "DrakeLorestone",
+      "hash": -1524484548,
+      "kind": "location"
+    },
+    {
+      "s": "MountainWell1",
+      "hash": -426467404,
+      "kind": "location"
+    },
+    {
+      "s": "MountainCave01",
+      "hash": -1218789637,
+      "kind": "location"
+    },
+    {
+      "s": "ShipWreck01",
+      "hash": 363850531,
+      "kind": "location"
+    },
+    {
+      "s": "ShipWreck02",
+      "hash": 363850528,
+      "kind": "location"
+    },
+    {
+      "s": "ShipWreck03",
+      "hash": 363850529,
+      "kind": "location"
+    },
+    {
+      "s": "ShipWreck04",
+      "hash": 363850526,
+      "kind": "location"
+    },
+    {
+      "s": "Hugintest",
+      "hash": 2133507115,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_Meadows",
+      "hash": -547648914,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_Boars",
+      "hash": -1933450767,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_Swamps",
+      "hash": 425345471,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_Mountains",
+      "hash": 1430880748,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_BlackForest",
+      "hash": -1901040178,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_Plains",
+      "hash": -722535843,
+      "kind": "location"
+    },
+    {
+      "s": "DevHouse1",
+      "hash": -127651470,
+      "kind": "location"
+    },
+    {
+      "s": "DevSoundTest",
+      "hash": 1179962096,
+      "kind": "location"
+    },
+    {
+      "s": "DevHouse2",
+      "hash": -127651471,
+      "kind": "location"
+    },
+    {
+      "s": "DevHouse3",
+      "hash": -127651472,
+      "kind": "location"
+    },
+    {
+      "s": "DevWall1",
+      "hash": -1034026548,
+      "kind": "location"
+    },
+    {
+      "s": "DevWall2",
+      "hash": 1694856807,
+      "kind": "location"
+    },
+    {
+      "s": "DevFloor1",
+      "hash": -1219381620,
+      "kind": "location"
+    },
+    {
+      "s": "DevGround1",
+      "hash": 1537449447,
+      "kind": "location"
+    },
+    {
+      "s": "DevGround2",
+      "hash": 1134164920,
+      "kind": "location"
+    },
+    {
+      "s": "DevHouse4",
+      "hash": -127651465,
+      "kind": "location"
+    },
+    {
+      "s": "DevHouse5",
+      "hash": -127651466,
+      "kind": "location"
+    },
+    {
+      "s": "DevDressingRoom",
+      "hash": -314259521,
+      "kind": "location"
+    },
+    {
+      "s": "DevKitchen",
+      "hash": -771371083,
+      "kind": "location"
+    },
+    {
+      "s": "DevGarden",
+      "hash": 37256140,
+      "kind": "location"
+    },
+    {
+      "s": "DevForge",
+      "hash": 834775508,
+      "kind": "location"
+    },
+    {
+      "s": "DevMageRoom",
+      "hash": 317620644,
+      "kind": "location"
+    },
+    {
+      "s": "DevBedchamber",
+      "hash": 2043448126,
+      "kind": "location"
+    },
+    {
+      "s": "DevCombatRing",
+      "hash": -2071030337,
+      "kind": "location"
+    },
+    {
+      "s": "DevHouseStart",
+      "hash": -1494136189,
+      "kind": "location"
+    },
+    {
+      "s": "DevCombatRange",
+      "hash": 1006719734,
+      "kind": "location"
+    },
+    {
+      "s": "CombatRuin01",
+      "hash": 1765071215,
+      "kind": "location"
+    },
+    {
+      "s": "BigRockClearing",
+      "hash": -570054262,
+      "kind": "location"
+    },
+    {
+      "s": "TarPit1",
+      "hash": -1654129093,
+      "kind": "location"
+    },
+    {
+      "s": "TarPit2",
+      "hash": -1654129096,
+      "kind": "location"
+    },
+    {
+      "s": "TarPit3",
+      "hash": -1654129095,
+      "kind": "location"
+    },
+    {
+      "s": "MountainCave02",
+      "hash": 1510093718,
+      "kind": "location"
+    },
+    {
+      "s": "AncientUpgradeStation",
+      "hash": -408213426,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_GuardTower1_new",
+      "hash": -910806288,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_GuardTower1_ruined_new",
+      "hash": -1319869320,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_GuardTower1_ruined_new2",
+      "hash": -1093605594,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_GuardTower2_new",
+      "hash": -910811537,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_GuardTower3_new",
+      "hash": -910804114,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_GuardTower3_ruined_new",
+      "hash": -1241737930,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Lighthouse1_new",
+      "hash": 49729222,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Excavation1",
+      "hash": -1871976351,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Excavation2",
+      "hash": -1871976348,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Excavation3",
+      "hash": -1871976349,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Harbour1",
+      "hash": 989493286,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Viaduct1",
+      "hash": 976143149,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Viaduct2",
+      "hash": -1752740206,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_RockSpire1",
+      "hash": 1618721293,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Giant1",
+      "hash": -1561523172,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Giant2",
+      "hash": -1158238645,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_DvergrTownEntrance1",
+      "hash": 586693175,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_DvergrTownEntrance2",
+      "hash": 586693176,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_DvergrBossEntrance1",
+      "hash": 1558543418,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_RoadPost1",
+      "hash": 950643877,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_StatueGroup1",
+      "hash": -421428790,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Statue1",
+      "hash": 536749119,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Statue2",
+      "hash": 536749122,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Swords1",
+      "hash": 735414311,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Swords2",
+      "hash": 735414308,
+      "kind": "location"
+    },
+    {
+      "s": "Mistlands_Swords3",
+      "hash": 735414309,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_Mistlands",
+      "hash": -763092713,
+      "kind": "location"
+    },
+    {
+      "s": "Hildir_cave",
+      "hash": 1980538654,
+      "kind": "location"
+    },
+    {
+      "s": "Hildir_camp",
+      "hash": 1221023754,
+      "kind": "location"
+    },
+    {
+      "s": "Hildir_crypt",
+      "hash": 1138437209,
+      "kind": "location"
+    },
+    {
+      "s": "Hildir_plainsfortress",
+      "hash": 441519708,
+      "kind": "location"
+    },
+    {
+      "s": "FaderLocation",
+      "hash": -201398907,
+      "kind": "location"
+    },
+    {
+      "s": "PlaceofMystery1",
+      "hash": -2054361412,
+      "kind": "location"
+    },
+    {
+      "s": "PlaceofMystery2",
+      "hash": -2054361411,
+      "kind": "location"
+    },
+    {
+      "s": "PlaceofMystery3",
+      "hash": -2054361410,
+      "kind": "location"
+    },
+    {
+      "s": "CharredFortress",
+      "hash": -1652154393,
+      "kind": "location"
+    },
+    {
+      "s": "FortressRuins",
+      "hash": 809757623,
+      "kind": "location"
+    },
+    {
+      "s": "CharredRuins1",
+      "hash": 387274709,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_Ashlands",
+      "hash": 1438392230,
+      "kind": "location"
+    },
+    {
+      "s": "LeviathanLava",
+      "hash": 148267254,
+      "kind": "location"
+    },
+    {
+      "s": "SulfurArch",
+      "hash": 1116518979,
+      "kind": "location"
+    },
+    {
+      "s": "CharredStone_Spawner",
+      "hash": 90683063,
+      "kind": "location"
+    },
+    {
+      "s": "VoltureNest",
+      "hash": 1937790547,
+      "kind": "location"
+    },
+    {
+      "s": "CharredTowerRuins1",
+      "hash": 1741095288,
+      "kind": "location"
+    },
+    {
+      "s": "CharredTowerRuins1_dvergr",
+      "hash": 1445094333,
+      "kind": "location"
+    },
+    {
+      "s": "CharredTowerRuins2",
+      "hash": -987788067,
+      "kind": "location"
+    },
+    {
+      "s": "CharredTowerRuins3",
+      "hash": 578295874,
+      "kind": "location"
+    },
+    {
+      "s": "AshlandRuins",
+      "hash": 186494,
+      "kind": "location"
+    },
+    {
+      "s": "MorgenHole1",
+      "hash": 1757998807,
+      "kind": "location"
+    },
+    {
+      "s": "MorgenHole2",
+      "hash": 1757998806,
+      "kind": "location"
+    },
+    {
+      "s": "MorgenHole3",
+      "hash": 1757998805,
+      "kind": "location"
+    },
+    {
+      "s": "CharredRuins2",
+      "hash": 387274706,
+      "kind": "location"
+    },
+    {
+      "s": "CharredRuins3",
+      "hash": 387274707,
+      "kind": "location"
+    },
+    {
+      "s": "CharredRuins4",
+      "hash": 387274712,
+      "kind": "location"
+    },
+    {
+      "s": "DevWallAsh",
+      "hash": -1685710397,
+      "kind": "location"
+    },
+    {
+      "s": "BogWitch_Camp",
+      "hash": 103120399,
+      "kind": "location"
+    },
+    {
+      "s": "DN_Bossroom",
+      "hash": -1918492477,
+      "kind": "location"
+    },
+    {
+      "s": "TheDarkestHole",
+      "hash": -1951029399,
+      "kind": "location"
+    },
+    {
+      "s": "TheHole01",
+      "hash": 2033092268,
+      "kind": "location"
+    },
+    {
+      "s": "NorthVillage",
+      "hash": 654341907,
+      "kind": "location"
+    },
+    {
+      "s": "MorkBorg",
+      "hash": -735541193,
+      "kind": "location"
+    },
+    {
+      "s": "NorthMemorialPlace",
+      "hash": -773526610,
+      "kind": "location"
+    },
+    {
+      "s": "FrozenShip01_DN",
+      "hash": -1457840136,
+      "kind": "location"
+    },
+    {
+      "s": "FrozenShip02_DN",
+      "hash": -194284173,
+      "kind": "location"
+    },
+    {
+      "s": "FrozenShip03_DN",
+      "hash": -335446674,
+      "kind": "location"
+    },
+    {
+      "s": "IcePond1",
+      "hash": -1186629713,
+      "kind": "location"
+    },
+    {
+      "s": "HotSpring1",
+      "hash": 199760363,
+      "kind": "location"
+    },
+    {
+      "s": "HotSpring2",
+      "hash": 603044890,
+      "kind": "location"
+    },
+    {
+      "s": "HotSpring3",
+      "hash": -963039051,
+      "kind": "location"
+    },
+    {
+      "s": "DN_hut01",
+      "hash": 333264569,
+      "kind": "location"
+    },
+    {
+      "s": "ShipSetting02",
+      "hash": 1705714110,
+      "kind": "location"
+    },
+    {
+      "s": "ShipSetting03",
+      "hash": 1705714111,
+      "kind": "location"
+    },
+    {
+      "s": "LumberCamp",
+      "hash": -931516956,
+      "kind": "location"
+    },
+    {
+      "s": "ShipWreck01_DN",
+      "hash": 662597300,
+      "kind": "location"
+    },
+    {
+      "s": "ShipWreck02_DN",
+      "hash": 662597201,
+      "kind": "location"
+    },
+    {
+      "s": "HalfBurried_ForestCrypt",
+      "hash": 1768081860,
+      "kind": "location"
+    },
+    {
+      "s": "FimbulLocation01",
+      "hash": 2044546305,
+      "kind": "location"
+    },
+    {
+      "s": "Runestone_DeepNorth",
+      "hash": -1766300821,
+      "kind": "location"
+    },
+    {
+      "s": "DN_gammeltrollFrac01",
+      "hash": -1315950378,
+      "kind": "location"
+    },
+    {
+      "s": "DN_gammeltrollFrac02",
+      "hash": -1719234905,
+      "kind": "location"
+    },
+    {
+      "s": "BearCave",
+      "hash": -423943711,
+      "kind": "location"
+    },
+    {
+      "s": "WoodVillage2",
+      "hash": -71119047,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins07_sunk",
+      "hash": -892039736,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins08_sunk",
+      "hash": -892045297,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins09_sunk",
+      "hash": -892046258,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins10_sunk",
+      "hash": -1487967348,
+      "kind": "location"
+    },
+    {
+      "s": "SwampHut1_1",
+      "hash": 1664204766,
+      "kind": "location"
+    },
+    {
+      "s": "SwampHut2_1",
+      "hash": 1664204605,
+      "kind": "location"
+    },
+    {
+      "s": "SwampHut3_1",
+      "hash": 1664204700,
+      "kind": "location"
+    },
+    {
+      "s": "StoneTowerRuins05_leet",
+      "hash": 156704025,
+      "kind": "location"
+    },
+    {
+      "s": "GoblinCamp2_1",
+      "hash": 423118146,
+      "kind": "location"
+    },
+    {
+      "s": "GoblinHut01",
+      "hash": 404361797,
+      "kind": "location"
+    },
+    {
+      "s": "GoblinHut02",
+      "hash": 404361800,
+      "kind": "location"
+    },
+    {
+      "s": "GoblinHut03",
+      "hash": 404361799,
+      "kind": "location"
+    },
+    {
+      "s": "TarPit1_1",
+      "hash": 1107152229,
+      "kind": "location"
+    },
+    {
+      "s": "TarPit2_1",
+      "hash": 1107152196,
+      "kind": "location"
+    },
+    {
+      "s": "TarPit3_1",
+      "hash": 1107152163,
+      "kind": "location"
+    },
+    {
+      "s": "rock4_coast",
+      "hash": -790658592,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock4_heath",
+      "hash": -1865985940,
+      "kind": "vegetation"
+    },
+    {
+      "s": "HeathRockPillar",
+      "hash": -2132038161,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock2_heath",
+      "hash": -1865631054,
+      "kind": "vegetation"
+    },
+    {
+      "s": "HugeRoot1",
+      "hash": -832142516,
+      "kind": "vegetation"
+    },
+    {
+      "s": "SwampTree2_darkland",
+      "hash": 2052455688,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock3_mountain",
+      "hash": -1398465710,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock3_silver",
+      "hash": 297427804,
+      "kind": "vegetation"
+    },
+    {
+      "s": "silvervein",
+      "hash": 1611466255,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock1_mountain",
+      "hash": -1396233392,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock2_mountain",
+      "hash": -1397136109,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Rock_4",
+      "hash": 1576173780,
+      "kind": "vegetation"
+    },
+    {
+      "s": "mudpile_beacon",
+      "hash": -42517997,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Rock_4_plains",
+      "hash": -2040381836,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Rock_3",
+      "hash": 1172889253,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock4_forest",
+      "hash": 1707947207,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock4_copper",
+      "hash": -1552092171,
+      "kind": "vegetation"
+    },
+    {
+      "s": "MineRock_Tin",
+      "hash": -1882492588,
+      "kind": "vegetation"
+    },
+    {
+      "s": "vfx_swamp_mist",
+      "hash": 1008438155,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Crow",
+      "hash": 903556745,
+      "kind": "vegetation"
+    },
+    {
+      "s": "vfx_ocean_clouds",
+      "hash": 267788734,
+      "kind": "vegetation"
+    },
+    {
+      "s": "vfx_edge_clouds",
+      "hash": -602293851,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Beech1",
+      "hash": -493262268,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Birch1",
+      "hash": -427486029,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Birch1_aut",
+      "hash": 816500238,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Birch2",
+      "hash": -1993569970,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Oak1",
+      "hash": 735284842,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Birch2_aut",
+      "hash": -789472993,
+      "kind": "vegetation"
+    },
+    {
+      "s": "FirTree",
+      "hash": 1185163063,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pinetree_01",
+      "hash": 797319082,
+      "kind": "vegetation"
+    },
+    {
+      "s": "acacitree",
+      "hash": 476803135,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Beech_small1",
+      "hash": 865557360,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Beech_small2",
+      "hash": 1268841887,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Bush02_en",
+      "hash": -136568224,
+      "kind": "vegetation"
+    },
+    {
+      "s": "CloudberryBush",
+      "hash": 940750515,
+      "kind": "vegetation"
+    },
+    {
+      "s": "FirTree_small_dead",
+      "hash": -367866354,
+      "kind": "vegetation"
+    },
+    {
+      "s": "SwampTree1",
+      "hash": 2111235755,
+      "kind": "vegetation"
+    },
+    {
+      "s": "SwampTree2",
+      "hash": 1707951228,
+      "kind": "vegetation"
+    },
+    {
+      "s": "SwampTree2_log",
+      "hash": 270257971,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Flies",
+      "hash": -1711908779,
+      "kind": "vegetation"
+    },
+    {
+      "s": "FirTree_small",
+      "hash": 888684615,
+      "kind": "vegetation"
+    },
+    {
+      "s": "vertical_web",
+      "hash": 547607065,
+      "kind": "vegetation"
+    },
+    {
+      "s": "horizontal_web",
+      "hash": 193150005,
+      "kind": "vegetation"
+    },
+    {
+      "s": "tunnel_web",
+      "hash": 1473935011,
+      "kind": "vegetation"
+    },
+    {
+      "s": "FirTree_oldLog",
+      "hash": 1051479931,
+      "kind": "vegetation"
+    },
+    {
+      "s": "stubbe",
+      "hash": 595427151,
+      "kind": "vegetation"
+    },
+    {
+      "s": "StatueEvil",
+      "hash": 726946320,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Bush01",
+      "hash": 548904977,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Bush01_heath",
+      "hash": -1798873102,
+      "kind": "vegetation"
+    },
+    {
+      "s": "shrub_2",
+      "hash": -1779355401,
+      "kind": "vegetation"
+    },
+    {
+      "s": "shrub_2_heath",
+      "hash": -199539902,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Thistle",
+      "hash": 1175276079,
+      "kind": "vegetation"
+    },
+    {
+      "s": "BlueberryBush",
+      "hash": 1998010392,
+      "kind": "vegetation"
+    },
+    {
+      "s": "RaspberryBush",
+      "hash": 1809630058,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Mushroom",
+      "hash": 1520650186,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Dandelion",
+      "hash": 16756586,
+      "kind": "vegetation"
+    },
+    {
+      "s": "ormbunke_green_medium",
+      "hash": 734016949,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Waystone",
+      "hash": 834041922,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Flint",
+      "hash": -1217738099,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Tin",
+      "hash": -2129458801,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Branch",
+      "hash": 2035819856,
+      "kind": "vegetation"
+    },
+    {
+      "s": "HugeStone1",
+      "hash": -319475127,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rockformation1",
+      "hash": 1524190963,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock_a",
+      "hash": 198273643,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_BogIronOre",
+      "hash": 1644571806,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Stone",
+      "hash": -1471593253,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_StoneRock",
+      "hash": 1649351520,
+      "kind": "vegetation"
+    },
+    {
+      "s": "ice1",
+      "hash": 1017608796,
+      "kind": "vegetation"
+    },
+    {
+      "s": "ice_rock1",
+      "hash": 343637466,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Skull1",
+      "hash": 757858766,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Skull2",
+      "hash": 354574239,
+      "kind": "vegetation"
+    },
+    {
+      "s": "GlowingMushroom",
+      "hash": -1457187493,
+      "kind": "vegetation"
+    },
+    {
+      "s": "MineRock_Obsidian",
+      "hash": 820355464,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_SeedTurnip",
+      "hash": 1947547595,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_SeedCarrot",
+      "hash": 1405222666,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Barley",
+      "hash": -739875783,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Leviathan",
+      "hash": 1332964068,
+      "kind": "vegetation"
+    },
+    {
+      "s": "MistArea",
+      "hash": -459035306,
+      "kind": "vegetation"
+    },
+    {
+      "s": "MistArea_edge",
+      "hash": -1500069970,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_mistlands1",
+      "hash": -154208029,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_mistlands2",
+      "hash": 1411875912,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock_mistlands1",
+      "hash": 1499269640,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock_mistlands2",
+      "hash": 1499269639,
+      "kind": "vegetation"
+    },
+    {
+      "s": "giant_skull",
+      "hash": -1505268321,
+      "kind": "vegetation"
+    },
+    {
+      "s": "giant_helmet1",
+      "hash": 1217240684,
+      "kind": "vegetation"
+    },
+    {
+      "s": "giant_helmet2",
+      "hash": 1217240681,
+      "kind": "vegetation"
+    },
+    {
+      "s": "giant_sword1",
+      "hash": -1493410116,
+      "kind": "vegetation"
+    },
+    {
+      "s": "giant_sword2",
+      "hash": 72673825,
+      "kind": "vegetation"
+    },
+    {
+      "s": "giant_ribs",
+      "hash": -960615190,
+      "kind": "vegetation"
+    },
+    {
+      "s": "vfx_mistlands_mist",
+      "hash": 1852800952,
+      "kind": "vegetation"
+    },
+    {
+      "s": "YggdrasilRoot",
+      "hash": 2069500716,
+      "kind": "vegetation"
+    },
+    {
+      "s": "YggaShoot1",
+      "hash": 2026655068,
+      "kind": "vegetation"
+    },
+    {
+      "s": "YggaShoot2",
+      "hash": -702228287,
+      "kind": "vegetation"
+    },
+    {
+      "s": "YggaShoot3",
+      "hash": 863855654,
+      "kind": "vegetation"
+    },
+    {
+      "s": "YggaShoot_small1",
+      "hash": -62980316,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Mushroom_Magecap",
+      "hash": -1313626337,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Mushroom_JotunPuffs",
+      "hash": -1419806457,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_ashlands1",
+      "hash": -1661430002,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_ashlands2",
+      "hash": -1661429999,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_ashlands3_Arch_1",
+      "hash": 624084809,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_ashlands4",
+      "hash": -1661430005,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_ashlands5",
+      "hash": -1661430006,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_ashlands6",
+      "hash": -1661430003,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_ashlands7_HalfArch",
+      "hash": -689057020,
+      "kind": "vegetation"
+    },
+    {
+      "s": "cliff_ashlands8",
+      "hash": -1661429993,
+      "kind": "vegetation"
+    },
+    {
+      "s": "AshlandsTree1",
+      "hash": 870990425,
+      "kind": "vegetation"
+    },
+    {
+      "s": "AshlandsTree3",
+      "hash": 870990427,
+      "kind": "vegetation"
+    },
+    {
+      "s": "AshlandsTree6",
+      "hash": 870990430,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Ashlands_rock1",
+      "hash": -591983307,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Ashlands_rock2",
+      "hash": -995267834,
+      "kind": "vegetation"
+    },
+    {
+      "s": "AshlandsBranch1",
+      "hash": 2011351767,
+      "kind": "vegetation"
+    },
+    {
+      "s": "AshlandsBranch2",
+      "hash": 2011351770,
+      "kind": "vegetation"
+    },
+    {
+      "s": "AshlandsBranch3",
+      "hash": 2011351769,
+      "kind": "vegetation"
+    },
+    {
+      "s": "AshlandsBush1",
+      "hash": -2113381525,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Charredskull",
+      "hash": 2146196080,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Pot_Shard",
+      "hash": 1625867752,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Ashstone",
+      "hash": 1726828493,
+      "kind": "vegetation"
+    },
+    {
+      "s": "ashland_pot2_red",
+      "hash": 1116405303,
+      "kind": "vegetation"
+    },
+    {
+      "s": "UnstableLavaRock",
+      "hash": -1209701263,
+      "kind": "vegetation"
+    },
+    {
+      "s": "LeviathanLava",
+      "hash": 148267254,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_SmokePuff",
+      "hash": 432248582,
+      "kind": "vegetation"
+    },
+    {
+      "s": "GraveStone_Broken_World",
+      "hash": 1535305585,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Ashlands_ArchRoofDamaged",
+      "hash": -740836646,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Ashlands_Pillar4",
+      "hash": 1645765767,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Ashlands_Ruins_Wall_Windows_Broken_4x6",
+      "hash": -900865316,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Rock_4_deepnorth",
+      "hash": 1052247898,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Rock_3_deepnorth",
+      "hash": 194206525,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Rock_7_deepnorth",
+      "hash": 171973417,
+      "kind": "vegetation"
+    },
+    {
+      "s": "SnowFirTree",
+      "hash": -1251589746,
+      "kind": "vegetation"
+    },
+    {
+      "s": "SnowFirTree 2",
+      "hash": 222289852,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pinetree_Snow",
+      "hash": 1040413270,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pinetree_Snow_dead",
+      "hash": 1182706869,
+      "kind": "vegetation"
+    },
+    {
+      "s": "SnowFirTree_small",
+      "hash": -1475823994,
+      "kind": "vegetation"
+    },
+    {
+      "s": "stubbe_deepnorth",
+      "hash": 347870911,
+      "kind": "vegetation"
+    },
+    {
+      "s": "FirTree_oldLog_deepnorth",
+      "hash": -1497576765,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Branch_Snow",
+      "hash": 269664618,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_Snowball",
+      "hash": 645628170,
+      "kind": "vegetation"
+    },
+    {
+      "s": "LingonberryBush",
+      "hash": -985012277,
+      "kind": "vegetation"
+    },
+    {
+      "s": "FrozenGD",
+      "hash": -699293935,
+      "kind": "vegetation"
+    },
+    {
+      "s": "FrozenSkeleton_Pose1",
+      "hash": -189668,
+      "kind": "vegetation"
+    },
+    {
+      "s": "FrozenSkeleton_Pose2",
+      "hash": 403094859,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Bush01_deepnorth",
+      "hash": 1352094273,
+      "kind": "vegetation"
+    },
+    {
+      "s": "StumpHut",
+      "hash": 1172289510,
+      "kind": "vegetation"
+    },
+    {
+      "s": "StumpHole",
+      "hash": -1755069231,
+      "kind": "vegetation"
+    },
+    {
+      "s": "StumpLog",
+      "hash": -57767025,
+      "kind": "vegetation"
+    },
+    {
+      "s": "deepnorth_lantern_standing",
+      "hash": -373806375,
+      "kind": "vegetation"
+    },
+    {
+      "s": "IceShore_1",
+      "hash": 971255378,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pickable_SeedKale",
+      "hash": -1122757642,
+      "kind": "vegetation"
+    },
+    {
+      "s": "LargeBone",
+      "hash": 849791935,
+      "kind": "vegetation"
+    },
+    {
+      "s": "LargeBone_half01",
+      "hash": 1642831486,
+      "kind": "vegetation"
+    },
+    {
+      "s": "LargeBone_half02",
+      "hash": 76747545,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Rock_7_meadows",
+      "hash": -1591307680,
+      "kind": "vegetation"
+    },
+    {
+      "s": "FireFlies",
+      "hash": -1931516595,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Greydwarf_Root",
+      "hash": -1510980060,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Greydwarf_Surprise",
+      "hash": -1309853163,
+      "kind": "vegetation"
+    },
+    {
+      "s": "stone_wall_2x1_ruin",
+      "hash": -1500301459,
+      "kind": "vegetation"
+    },
+    {
+      "s": "stone_wall_1x1_ruin",
+      "hash": 271482034,
+      "kind": "vegetation"
+    },
+    {
+      "s": "stone_wall_ruin",
+      "hash": -1524812815,
+      "kind": "vegetation"
+    },
+    {
+      "s": "stone_wall_ruin_2",
+      "hash": -513312994,
+      "kind": "vegetation"
+    },
+    {
+      "s": "GhostSkull",
+      "hash": -1720261374,
+      "kind": "vegetation"
+    },
+    {
+      "s": "wooden_path",
+      "hash": 1064861474,
+      "kind": "vegetation"
+    },
+    {
+      "s": "wood_pole_log_4_worn",
+      "hash": 767866465,
+      "kind": "vegetation"
+    },
+    {
+      "s": "rock3_mountain_1",
+      "hash": 1948895010,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Pinetree_01_Stub",
+      "hash": 364904293,
+      "kind": "vegetation"
+    },
+    {
+      "s": "Mushroom",
+      "hash": -1961898040,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Lantern",
+      "hash": 1659590678,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Bones",
+      "hash": 1601831813,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Menhir",
+      "hash": 615833905,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Dark Meadows",
+      "hash": -2000577888,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Peaceful Meadows",
+      "hash": -1033898001,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Dandelion Meadows",
+      "hash": 1395979302,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Raspberry Meadows",
+      "hash": -1637220474,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Smalltree Meadows",
+      "hash": -2036108597,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Birch Meadows",
+      "hash": 871002250,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Troll Black Forest",
+      "hash": 186992975,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Root Black Forest",
+      "hash": -1972283938,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Ruin Black Forest",
+      "hash": 1529231332,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Rock Black Forest",
+      "hash": -180037461,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Pinetree Black Forest",
+      "hash": -581075728,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Blueberry Black Forest",
+      "hash": 1064283686,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Hut Swamp",
+      "hash": -1270463955,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Bog Swamp",
+      "hash": -1255317486,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Bat Swamp",
+      "hash": -421111417,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Abomination Swamp",
+      "hash": -575562145,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Wolf Mountain",
+      "hash": -552234979,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Drake Mountain",
+      "hash": -1893580742,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Fortress Mountain",
+      "hash": -1431919873,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Lox Plains",
+      "hash": 868504410,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Goblin Plains",
+      "hash": -365635438,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Death Plains",
+      "hash": -797047103,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Kalhygge Black Forest",
+      "hash": -1095630350,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Rockless Mistlands",
+      "hash": 1689244971,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Trees Mistlands",
+      "hash": 1230092826,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Swords Mistlands",
+      "hash": -1274265967,
+      "kind": "altbiome"
+    },
+    {
+      "s": "Hare Mistlands",
+      "hash": -273828275,
+      "kind": "altbiome"
+    },
+    {
+      "s": "BroodSwarm Mistlands",
+      "hash": 793119225,
+      "kind": "altbiome"
+    }
+  ]
+}

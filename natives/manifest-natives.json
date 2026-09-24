@@ -1,0 +1,64 @@
+{
+  "stamp": "DATA-STAMP game-version=1.0.15 network=40 unity=6000.0.75f1 assembly_valheim-sha256=59f53fb55d99d22a33e8ed094eec8d21e9f133543bce92bc3d80dce44033adb1 unityplayer-sha256=4d161e15d8ccdb32eb73262e7a3e0a66f8c175b50a38e22ae5b0e8fb9aea98f3 dumped=2026-09-22 dumper=1.0.0 mode=natives schema=1",
+  "schema": 1,
+  "game": {
+    "version": "1.0.15",
+    "networkVersion": 40,
+    "unityVersion": "6000.0.75f1",
+    "assemblyValheimSha256": "59f53fb55d99d22a33e8ed094eec8d21e9f133543bce92bc3d80dce44033adb1",
+    "unityPlayerSha256": "4d161e15d8ccdb32eb73262e7a3e0a66f8c175b50a38e22ae5b0e8fb9aea98f3",
+    "assemblyValheimBytes": 2569728,
+    "unityPlayerBytes": 34413480,
+    "steamBuild": null
+  },
+  "dumper": {
+    "version": "1.0.0",
+    "mode": "natives",
+    "utc": "2026-09-22T22:48:04Z",
+    "guid": "DoomMachine.SeedLabDumper"
+  },
+  "world": null,
+  "counts": null,
+  "sortOrderTies": false,
+  "files": [
+    {
+      "path": "natives-half.json",
+      "bytes": 351165,
+      "sha256": "92003cf21c546204362fa31cc942ad0b47ea83b236c466170049055934a1d67a"
+    },
+    {
+      "path": "natives-hash.json",
+      "bytes": 40290,
+      "sha256": "5b11d7af5e7d6f8231c46c9e6b720dbff376ee739c75627ce6e6161352c2eea3"
+    },
+    {
+      "path": "natives-libm.json",
+      "bytes": 31140,
+      "sha256": "c2239f498c3f29b9cd8c3b6a9276f63b6472180d7f19eef3efd6c636f6fccf1a"
+    },
+    {
+      "path": "natives-perlin.bin",
+      "bytes": 3153372,
+      "sha256": "298de61235af9c3874416e2844b0f33289277ec2feaf4159896da12554ad577e"
+    },
+    {
+      "path": "natives-perlin.json",
+      "bytes": 1334,
+      "sha256": "cf3ec3a7ec670f7241389af52a973dc5e435cfa235c8230852e40a941b0983dd"
+    },
+    {
+      "path": "natives-random.json",
+      "bytes": 1068949,
+      "sha256": "20c9be1763b52c47b94d1c3eaeaa4a16cd3ae67511ddbcac08c45bb0d1ec782f"
+    },
+    {
+      "path": "version-constants.json",
+      "bytes": 715,
+      "sha256": "f44aecea10eb7056dc5386dfc4e121b03551bb58cef01fd04d48de3948ffe250"
+    }
+  ],
+  "notes": [
+    "files[] is a scan of the whole dump folder, so it may include files written by an earlier run in another mode. Each file carries its own stamp; this run's own metadata is preserved in manifest-natives.json.",
+    "Rewritten for the SeedLab machine-report package: files[] now lists exactly the files shipped in this folder, flat (the dump's goldens/ prefix dropped), with sizes and SHA-256 recomputed from them. seed-input.json is not shipped and is no longer listed; natives-hash.json, written by the assets run and never listed here, is now listed; version-constants.json is listed as shipped (715 bytes, rewritten by the later assets run; the natives run had recorded a 716-byte copy). natives-hash.json had one sample removed before hashing - see README.md."
+  ]
+}

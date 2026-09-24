@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    SeedLab machine report: checks that this PC reproduces SeedLab's world-generation arithmetic bit
+    for bit at every instruction-set level, and measures how fast it runs. Windows x64 only.
+
+    It is built framework-dependent and shipped beside an app-local copy of the .NET runtime
+    (the package's dotnet\ folder). The apphost is told to look for the runtime ONLY in ..\dotnet,
+    relative to itself, so a machine-wide .NET install is never used even when one exists.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <UseAppHost>true</UseAppHost>
+    <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
+    <AppHostRelativeDotNet>..\dotnet</AppHostRelativeDotNet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>SeedLab.MachineReport</AssemblyName>
+    <RootNamespace>SeedLab.MachineReport</RootNamespace>
+    <Version>1.0.0</Version>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <!-- Windows-only by design: the registry and kernel32 calls are the point of the tool. -->
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Vendored SeedLab projects, unmodified (VENDORED.md). -->
+    <ProjectReference Include="..\..\vendor\src\SeedLab.WorldGen\SeedLab.WorldGen.csproj" />
+    <ProjectReference Include="..\..\vendor\src\SeedLab.Seeds\SeedLab.Seeds.csproj" />
+    <ProjectReference Include="..\..\vendor\src\SeedLab.Runtime\SeedLab.Runtime.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Vendored single files, unmodified, compiled into this tool:
+         - the generator-level golden suite vseed registers with its machine self-test;
+         - the 11-check native-function gate from SeedLab's tests;
+         - the binary16 decoder that gate's HalfToFloat check calls. -->
+    <Compile Include="..\..\vendor\src\SeedLab.Cli\Infra\NativesSuite.cs" Link="Vendored\NativesSuite.cs" />
+    <Compile Include="..\..\vendor\tests\SeedLab.Tests\NativesGoldens.cs" Link="Vendored\NativesGoldens.cs" />
+    <Compile Include="..\..\vendor\src\SeedLab.Saves\Half16.cs" Link="Vendored\Half16.cs" />
+  </ItemGroup>
+</Project>

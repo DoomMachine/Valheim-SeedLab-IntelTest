@@ -1,0 +1,164 @@
+{
+  "format": "seedlab-machine-report-reference 1",
+  "tool": "1.0.0",
+  "seedlabCommit": "11aeb8f",
+  "what": "SHA-256 fingerprints of SeedLab's port of Valheim 1.0.15 world generation, identical at every instruction-set level on the machine below. A tester's machine is compared against these.",
+  "definitionsHash": "a7512bc38c3107639c77b1d44a3344f9f2318dc955781dadfae66b4b24b5903c",
+  "definitions": [
+    {
+      "id": "biome-base-dev",
+      "kind": "biome+base",
+      "seed": -1772362158,
+      "size": 1024,
+      "step": 24,
+      "description": "GetBiome + base height, 1024x1024 grid at 24 m, seed -1772362158",
+      "layout": "rows z = w(r), r = 0..N-1; within a row x = w(c), c = 0..N-1; w(i) = (i - N/2) * step + step/2 (float, exact); per cell: int32 LE (int)GetBiome(x, z), then int32 LE float bits of GetBaseHeight(x, z) (WorldGeneratorPort.GetBaseHeightPublic); generator built with deferPregeneration: true"
+    },
+    {
+      "id": "biome-base-holdout",
+      "kind": "biome+base",
+      "seed": 319486907,
+      "size": 1024,
+      "step": 24,
+      "description": "GetBiome + base height, 1024x1024 grid at 24 m, seed 319486907",
+      "layout": "rows z = w(r), r = 0..N-1; within a row x = w(c), c = 0..N-1; w(i) = (i - N/2) * step + step/2 (float, exact); per cell: int32 LE (int)GetBiome(x, z), then int32 LE float bits of GetBaseHeight(x, z) (WorldGeneratorPort.GetBaseHeightPublic); generator built with deferPregeneration: true"
+    },
+    {
+      "id": "biome-base-12345",
+      "kind": "biome+base",
+      "seed": 12345,
+      "size": 1024,
+      "step": 24,
+      "description": "GetBiome + base height, 1024x1024 grid at 24 m, seed 12345",
+      "layout": "rows z = w(r), r = 0..N-1; within a row x = w(c), c = 0..N-1; w(i) = (i - N/2) * step + step/2 (float, exact); per cell: int32 LE (int)GetBiome(x, z), then int32 LE float bits of GetBaseHeight(x, z) (WorldGeneratorPort.GetBaseHeightPublic); generator built with deferPregeneration: true"
+    },
+    {
+      "id": "height-dev",
+      "kind": "height",
+      "seed": -1772362158,
+      "size": 512,
+      "step": 48,
+      "description": "GetHeight after pre-generation, 512x512 grid at 48 m, seed -1772362158",
+      "layout": "rows z = w(r), within a row x = w(c), w(i) = (i - N/2) * step + step/2; per cell: int32 LE float bits of GetHeight(x, z) on a pre-generated world, each worker on its own Fork()"
+    },
+    {
+      "id": "height-holdout",
+      "kind": "height",
+      "seed": 319486907,
+      "size": 512,
+      "step": 48,
+      "description": "GetHeight after pre-generation, 512x512 grid at 48 m, seed 319486907",
+      "layout": "rows z = w(r), within a row x = w(c), w(i) = (i - N/2) * step + step/2; per cell: int32 LE float bits of GetHeight(x, z) on a pre-generated world, each worker on its own Fork()"
+    },
+    {
+      "id": "rivers-dev",
+      "kind": "rivers",
+      "seed": -1772362158,
+      "size": 0,
+      "step": 0,
+      "description": "pre-generated lakes, rivers, streams and river points, seed -1772362158",
+      "layout": "all little-endian: lake count, each lake x,y float bits; river count, each river p0.x p0.y p1.x p1.y center.x center.y widthMin widthMax curveWidth curveWavelength float bits; the same for streams (GetStreams); river-point cell count, cells sorted by (x, y), each: x, y, point count, each point p.x p.y w w2 float bits"
+    },
+    {
+      "id": "rivers-holdout",
+      "kind": "rivers",
+      "seed": 319486907,
+      "size": 0,
+      "step": 0,
+      "description": "pre-generated lakes, rivers, streams and river points, seed 319486907",
+      "layout": "all little-endian: lake count, each lake x,y float bits; river count, each river p0.x p0.y p1.x p1.y center.x center.y widthMin widthMax curveWidth curveWavelength float bits; the same for streams (GetStreams); river-point cell count, cells sorted by (x, y), each: x, y, point count, each point p.x p.y w w2 float bits"
+    }
+  ],
+  "fingerprints": {
+    "biome-base-dev": "1cbbc19e1bc3390ac76fa30101d56956036d3e9e3b37e07f229c81862e3055c0",
+    "biome-base-holdout": "8904e4402c77d64cd2018b7f3afce446e4297ca106a4757dd6ee8d0c3c815809",
+    "biome-base-12345": "8c8878c6bda999f31659875212440470df18c7bdc95fa3ffb5d95a391fb4bed2",
+    "height-dev": "08b2ec146d7f5cbc0651ee4be5bed937b9d23986ca2bd3e1b323724080c770e5",
+    "height-holdout": "bdef84a8ecf6d5c38cdf49058f39ca9a6b368e3eb0538517ae0dedf751029f8b",
+    "rivers-dev": "4bc46556b926afa07d10f47a41a8692def6738f7ba3dab41e063a298d94c935a",
+    "rivers-holdout": "14c7710d93963f5120684f648594f80c7d1580fc009dc81b85f678aa469b7789"
+  },
+  "madeOn": {
+    "cpu": "AMD Ryzen 7 9800X3D 8-Core Processor",
+    "vendor": "AuthenticAMD",
+    "family": 26,
+    "model": 68,
+    "stepping": 0,
+    "logicalProcessors": 16,
+    "levels": [
+      {
+        "id": "as-found",
+        "switches": "no switches",
+        "tier": "avx512",
+        "instructionSets": [
+          "Sse",
+          "Sse2",
+          "Sse3",
+          "Ssse3",
+          "Sse41",
+          "Sse42",
+          "Popcnt",
+          "Lzcnt",
+          "Bmi1",
+          "Bmi2",
+          "Avx",
+          "Avx2",
+          "Fma",
+          "AvxVnni",
+          "Avx512F",
+          "Avx512F.VL",
+          "Avx512BW",
+          "Avx512CD",
+          "Avx512DQ",
+          "Avx512Vbmi",
+          "Avx512Vbmi2"
+        ]
+      },
+      {
+        "id": "no-avx512",
+        "switches": "DOTNET_EnableAVX512=0 DOTNET_EnableAVX512F=0",
+        "tier": "avx2",
+        "instructionSets": [
+          "Sse",
+          "Sse2",
+          "Sse3",
+          "Ssse3",
+          "Sse41",
+          "Sse42",
+          "Popcnt",
+          "Lzcnt",
+          "Bmi1",
+          "Bmi2",
+          "Avx",
+          "Avx2",
+          "Fma",
+          "AvxVnni"
+        ]
+      },
+      {
+        "id": "no-avx2",
+        "switches": "DOTNET_EnableAVX2=0",
+        "tier": "avx",
+        "instructionSets": [
+          "Sse",
+          "Sse2",
+          "Sse3",
+          "Ssse3",
+          "Sse41",
+          "Sse42",
+          "Popcnt",
+          "Avx"
+        ]
+      },
+      {
+        "id": "scalar",
+        "switches": "DOTNET_EnableHWIntrinsic=0",
+        "tier": "scalar",
+        "instructionSets": []
+      }
+    ],
+    "windows": "Windows 10 Pro 22H2, build 19045.6466",
+    "ucrtbase": "10.0.19041.3636",
+    "dotnet": "10.0.12"
+  }
+}

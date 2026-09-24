@@ -1,0 +1,11 @@
+# Build output
+bin/
+obj/
+
+# The release package is rebuilt by tools/build-package.ps1 and published on the Releases page,
+# never committed.
+dist/
+
+# Anything a local run of the report tool leaves behind
+work/
+seedlab-machine-report.txt

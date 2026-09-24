@@ -1,0 +1,13 @@
+# Every text file in this repository is UTF-8 without a BOM, with LF line endings.
+* text=auto eol=lf
+
+# Except Windows batch files, which cmd.exe needs as CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary data, never converted.
+*.bin binary
+*.zip binary
+*.exe binary
+*.dll binary
+*.png binary

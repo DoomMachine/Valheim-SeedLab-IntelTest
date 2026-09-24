@@ -1,0 +1,30 @@
+<Project>
+  <!--
+    Settings for every project in this repository, including the vendored SeedLab projects under
+    vendor\src. SeedLab's own Directory.Build.props is not vendored (see VENDORED.md); its compiler
+    and runtime settings are repeated here so the vendored code builds exactly as it does upstream.
+  -->
+  <PropertyGroup>
+    <!-- Upstream SeedLab settings. -->
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+
+    <!-- A reproducible build that carries no trace of the machine it was built on: every source
+         path is mapped to /_/, no debug symbols are produced, and no source-control data (commit
+         hash, repository path) is embedded. -->
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildThisFileDirectory)=/_/</PathMap>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <EnableSourceLink>false</EnableSourceLink>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <GenerateRepositoryUrlAttribute>false</GenerateRepositoryUrlAttribute>
+
+    <Authors>DoomMachine</Authors>
+    <Product>SeedLab machine report</Product>
+  </PropertyGroup>
+</Project>
