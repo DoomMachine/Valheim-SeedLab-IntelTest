@@ -34,14 +34,16 @@ the game on them. Nothing is installed: the package carries its own copy of .NET
    needed. It is plain text - open it in Notepad first if you like.
 8. **Delete the folder and the zip** afterwards. The program leaves nothing anywhere else.
 
-**What it looks up:** the processor's name and nominal clock speed (from the registry), CPUID
-identification (vendor, family, model, stepping and feature bits), cores and threads (including
-performance and efficiency cores), the instruction sets .NET sees, total memory, the Windows version
-and build (from the registry), the version of Windows' C runtime (`System32\ucrtbase.dll`), whether
-Windows reports a battery and whether the PC is on mains power, and how busy the processor is during
-3 seconds before the checks. It also goes through the process's environment variables to find .NET
-settings (`DOTNET_*`, `COMPlus_*`, `CORECLR_*`), which every check runs without; of those it records
-the names only, plus the value of a short on/off switch such as `DOTNET_EnableAVX2`.
+**What it records about the PC:** the processor's name and nominal clock speed (from the registry),
+CPUID identification (vendor, family, model, stepping and feature bits), cores and threads
+(including performance and efficiency cores), the instruction sets .NET sees, total memory, the
+Windows edition, version and build (from the registry), the version of Windows' C runtime
+(`System32\ucrtbase.dll`), whether Windows reports a battery and whether the PC is on mains power,
+and how busy the processor is during 3 seconds before the checks. It also goes through the
+process's environment variables to find .NET settings (`DOTNET_*`, `COMPlus_*`, `CORECLR_*`),
+which every check runs without; of those it records the names only, plus the value of a short
+on/off switch such as `DOTNET_EnableAVX2`. SeedLab's own hardware probe, which its self-test runs,
+also reads how much memory is in use; that is not written to the report.
 
 **What it does not record:** your user name or computer name, serial numbers, product keys, network
 adapters or addresses, or any path outside the package folder; and it opens none of your files.

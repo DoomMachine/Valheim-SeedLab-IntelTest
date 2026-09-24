@@ -13,13 +13,13 @@ the PC runs that work. You do not need Valheim, and no game files or assets are 
 
 What it does, and what it does not do
 -------------------------------------
-- It looks up only: your processor's name, model, nominal speed, cores and instruction sets; how
-  much memory the PC has; the Windows version and build; the version of Windows' C runtime library
-  (ucrtbase.dll); whether the PC has a battery and whether it is on mains power; how busy the
-  processor is during 3 seconds before the checks; and which .NET settings are made in the
-  environment variables (names starting DOTNET_, COMPlus_ or CORECLR_), because the checks must
-  run without them - of those it records the names only, plus the value of an on/off switch such
-  as DOTNET_EnableAVX2.
+- The only facts it records about the PC are: the processor's name, model, nominal speed, cores
+  and instruction sets; how much memory the PC has; the Windows edition, version and build; the
+  version of Windows' C runtime library (ucrtbase.dll); whether the PC has a battery and whether
+  it is on mains power; how busy the processor is during 3 seconds before the checks; and the
+  names of any .NET settings made in the environment variables (names starting DOTNET_, COMPlus_
+  or CORECLR_ - the checks run without them), with the value of an on/off switch such as
+  DOTNET_EnableAVX2.
 - It does NOT record your user name or computer name, serial numbers, product keys, network
   details, or any folder outside this one, and it does not open your files.
 - It installs nothing and changes no settings. It runs on its own copy of .NET, in the "dotnet"
