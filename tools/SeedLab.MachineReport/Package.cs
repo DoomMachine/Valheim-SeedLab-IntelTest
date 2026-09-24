@@ -69,14 +69,23 @@ namespace SeedLab.MachineReport
 
         // ---- sanitising ------------------------------------------------------------------------
 
-        private static readonly Regex DrivePath =
-            new Regex(@"(?i)(?<![a-z0-9])[a-z]:(?:\\\\|\\|/)[^\s""'<>|]*", RegexOptions.Compiled);
+        // The rest of a path, once one has started. Folder names may hold spaces and apostrophes
+        // (C:\Users\Bob Smith\, O'Brien), so the path runs on until a character no Windows path can
+        // hold - " < > | * ? - or the end of the line: more text than the path may be withheld, never
+        // less. In JSON-escaped text a \\ pair is one backslash and \" ends the path, so the
+        // replacement never breaks the JSON around it.
+        private const string PathTail = @"(?:\\\\|[^""<>|*?\r\n\\]|\\(?!""))*";
+
+        // A drive path, C:\... or C:/..., in plain text or JSON-escaped (C:\\...). It may follow a
+        // JSON escape such as \n directly.
+        private static readonly Regex DrivePath = new Regex(
+            @"(?i)(?:(?<![a-z0-9])|(?<=\\[nrt]))[a-z]:(?:\\\\|\\|/)" + PathTail, RegexOptions.Compiled);
 
         // A network path, \\server\share\..., in plain text or JSON-escaped (\\\\server\\share). The
         // look-behind keeps a relative path out of it: in JSON, dotnet\shared becomes dotnet\\shared,
         // whose double backslash follows a letter, not the start of a path.
         private static readonly Regex UncPath = new Regex(
-            @"(?<![\\\w])\\\\\\\\[\w.$-]+\\\\[^\s""'<>|]*|(?<![\\\w])\\\\[\w.$-]+\\[^\s""'<>|]*",
+            @"(?<![\\\w])\\\\\\\\[\w.$-]+\\\\" + PathTail + @"|(?<![\\\w])\\\\[\w.$-]+\\" + PathTail,
             RegexOptions.Compiled);
 
         private static List<string>? _rootForms;

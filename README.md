@@ -18,7 +18,8 @@ the game on them. Nothing is installed: the package carries its own copy of .NET
    Get-FileHash .\SeedLab-MachineReport-1.0.0-win-x64.zip
    ```
 
-   The `Hash` it prints must be the same as the one on the release.
+   The `Hash` it prints must be the same as the one on the release (`Get-FileHash` prints capital
+   letters and `SHA256SUMS.txt` small ones; the case makes no difference).
 3. **Unblock, then extract.** Right-click the zip, *Properties*, tick *Unblock* if it is there, *OK*;
    then right-click, *Extract All...*. Unblocking first avoids most Windows warnings.
 4. **Close other programs** (games, browsers, video) - part of the test measures speed - and plug a
@@ -33,15 +34,20 @@ the game on them. Nothing is installed: the package carries its own copy of .NET
    needed. It is plain text - open it in Notepad first if you like.
 8. **Delete the folder and the zip** afterwards. The program leaves nothing anywhere else.
 
-**What it reads:** the processor's name, CPUID identification (vendor, family, model, stepping and
-feature bits), cores and threads (including performance and efficiency cores), the instruction sets
-.NET sees, total memory, the Windows version and build, the version of Windows' C runtime
-(`ucrtbase.dll`), and whether a laptop is on mains power.
+**What it looks up:** the processor's name and nominal clock speed (from the registry), CPUID
+identification (vendor, family, model, stepping and feature bits), cores and threads (including
+performance and efficiency cores), the instruction sets .NET sees, total memory, the Windows version
+and build (from the registry), the version of Windows' C runtime (`System32\ucrtbase.dll`), whether
+Windows reports a battery and whether the PC is on mains power, and how busy the processor is during
+3 seconds before the checks. It also goes through the process's environment variables to find .NET
+settings (`DOTNET_*`, `COMPlus_*`, `CORECLR_*`), which every check runs without; of those it records
+the names only, plus the value of a short on/off switch such as `DOTNET_EnableAVX2`.
 
-**What it does not read or record:** your user name or computer name, your files, serial numbers,
-product keys, network adapters or addresses, or any path outside the package folder. Before the
-report is written, every piece of text in it is filtered so that the package folder appears as
-`<package>` and any other folder path is withheld.
+**What it does not record:** your user name or computer name, serial numbers, product keys, network
+adapters or addresses, or any path outside the package folder; and it opens none of your files.
+Before the report is written, every piece of text in it is filtered so that the package folder
+appears as `<package>` and any other folder path is withheld, up to the end of its line or its
+quoted string.
 
 **What it writes:** only inside its own folder - a temporary `work` folder, deleted when it finishes,
 and the report. It installs nothing, changes no setting, and does not use or touch any .NET already
@@ -82,8 +88,9 @@ such as `C:\SeedLabTest`. If the window closes at once or shows an error, send a
      48 m for two, and the pre-generated lakes, rivers and streams of those two. They are compared
      with `reference\fingerprints.json`.
 3. **Times** the two costs every SeedLab search is made of - a whole-world biome grid (256 x 256
-   points) and a world's river pre-generation - at one thread, half and all of them, three runs of
-   10 s each per configuration, reporting the median and the spread.
+   points), on one thread, on half the logical processors and on all of them, and a world's river
+   pre-generation, on one thread and on all of them - three runs of 10 s each per configuration,
+   reporting the median and the spread.
 4. **Writes `seedlab-machine-report.txt`**: a plain summary (every check PASS or DIFFERENT, with its
    numbers), then one JSON block with all the data, between `-----BEGIN SEEDLAB MACHINE REPORT JSON-----`
    and `-----END SEEDLAB MACHINE REPORT JSON-----`. Exit code 0 means every check passed, 1 that some
@@ -109,15 +116,20 @@ result with sorted entries and fixed timestamps.
 
 The build is reproducible and carries no trace of the machine that made it: `Deterministic`, every
 source path mapped to `/_/` (`PathMap`), no debug symbols, and no source-control data embedded
-(`Directory.Build.props`). The apphost is built with `AppHostDotNetSearch=AppRelative` and
-`AppHostRelativeDotNet=..\dotnet`, so it looks for .NET **only** in the package's `dotnet\` folder;
-the `.bat` also sets `DOTNET_ROOT` to that folder.
+(`Directory.Build.props`). The only path inside a shipped binary is Microsoft's: the apphost,
+`app\SeedLab.MachineReport.exe`, is the SDK's own apphost, and its debug directory names the file
+of Microsoft's build of it (`D:\a\_work\1\s\...\apphost.pdb`); the four DLLs carry no path. The
+apphost is built with `AppHostDotNetSearch=AppRelative` and `AppHostRelativeDotNet=..\dotnet`, so
+it looks for .NET **only** in the package's `dotnet\` folder; the `.bat` also sets `DOTNET_ROOT`
+to that folder.
 
 `-MakeReference` first rebuilds `reference\fingerprints.json` by running the program's reference mode
 on the build machine; it refuses to write the file unless every check passes at every level, every
 level reaches a different instruction-set tier, and all four levels give identical fingerprints. The
 file records the machine it was made on (processor, instruction-set levels, Windows version) and the
-exact definition and byte layout of every fingerprint.
+exact definition and byte layout of every fingerprint. The program option behind it,
+`--make-reference <file>`, writes the file it is given, wherever that is; a tester's run (the `.bat`
+with no options) writes only the `work` folder and the report, inside the package.
 
 ## Repository layout
 
@@ -129,12 +141,12 @@ exact definition and byte layout of every fingerprint.
 | `vendor/` | SeedLab source, unmodified, from commit `11aeb8f` - see [VENDORED.md](VENDORED.md) |
 | `natives/` | the values recorded from Valheim's own code that the checks replay - see [natives/README.md](natives/README.md) |
 | `reference/fingerprints.json` | the reference fingerprints and the machine they were made on |
-| `THIRD-PARTY-NOTICES.md` | FastNoise (MIT), the bundled Microsoft .NET runtime's licence and notices, Valheim |
+| `THIRD-PARTY-NOTICES.md` | FastNoise (MIT), the bundled Microsoft .NET runtime's licence and notices, the re-created Valheim and Unity code in `vendor/`, Valheim |
 
 ## Credits
 
-The SeedLab machine report was conceived, directed and tested by DoomMachine, who also recorded - in
-their own copy of Valheim - the game values in `natives\` it checks against.
+The SeedLab machine report was conceived and directed by DoomMachine, who also recorded - in their
+own copy of Valheim - the game values in `natives\` it checks against.
 
 The code, tests and documentation were written by Claude, Anthropic's AI model, working in Claude
 Code under DoomMachine's direction. Commits are authored by DoomMachine; Claude is credited here
@@ -142,7 +154,7 @@ rather than as a co-author.
 
 Valheim is a trademark of Iron Gate AB. This project is independent, not affiliated with or endorsed
 by Iron Gate or Coffee Stain. Third-party material: THIRD-PARTY-NOTICES.md (FastNoise, MIT; the
-Microsoft .NET runtime bundled in the release package).
+Microsoft .NET runtime bundled in the release package; the port of the game's world generation).
 
 ## License
 

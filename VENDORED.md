@@ -49,9 +49,12 @@ Not vendored, deliberately:
 - Everything else in SeedLab: the command line, the web map, search, location placement, the game-data
   loader, the save readers, the dumper, and the tests other than the one file above.
 
-Two comments in the vendored files name one of SeedLab's two ground-truth test worlds by its world
-name (`src/SeedLab.WorldGen/Unity/UnityRandom.cs` line 109, `src/SeedLab.Saves/Half16.cs` line 13).
-They are left as they are, because the files are unmodified copies.
+Three comments in the vendored files refer to things outside this repository: two name one of
+SeedLab's two ground-truth test worlds by its world name (`src/SeedLab.WorldGen/Unity/UnityRandom.cs`
+line 109, `src/SeedLab.Saves/Half16.cs` line 13), and one cites an IL listing by the path of the
+working folder it was made in, which is in neither repository (`src/SeedLab.WorldGen/Unity/UnityMath.cs`
+line 8). They are left as they are, because the files are unmodified copies; they change nothing
+that is compiled.
 
 ## The files
 

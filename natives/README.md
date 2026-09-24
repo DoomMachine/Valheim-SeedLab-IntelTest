@@ -39,8 +39,18 @@ the checks compare bit patterns, never decimals.
 
 ## Where the seeds in these files come from
 
-No value here was taken from a world anyone plays. The dump ran at the game's main menu with no world
-loaded (`manifest-natives.json`: `"world": null`), so:
+No value here was taken from a world anyone plays. The files come from two runs of the dumper, and
+each file's stamp says which (`mode=natives` or `mode=assets`):
+
+- `natives-perlin.bin`, `natives-perlin.json`, `natives-random.json`, `natives-half.json`,
+  `natives-libm.json` and `manifest-natives.json` come from the natives run, made at the game's main
+  menu with no world loaded (`manifest-natives.json`: `"world": null`);
+- `natives-hash.json` and `version-constants.json` come from a later assets run, made while a world
+  was loaded. Neither depends on that world: the prefab names are the game's own, and the version
+  numbers and grid constants are compiled into the game. The one entry that did describe the loaded
+  world was removed (below).
+
+In the natives run:
 
 - the 268 `InitState` seeds and `worldgen-ctor` traces are exactly the dumper's fixed corpus: 0, 1, -1,
   int.MinValue, int.MaxValue, the two SeedLab test worlds' seeds (-1772362158 and 319486907, created
@@ -61,11 +71,12 @@ changed; the other six are byte-for-byte as recorded.
    kind `seedtext`: the seed name of the world that was loaded when the dumper recorded its game data,
    with its hash - and a seed name's hash *is* that world's seed. It describes a world on the machine
    that made the recording rather than the game, so it was removed. It adds nothing to the check: the
-   428 prefab names exercise the same function. The
-   removal was made by loading the file and writing it back with the same formatting (verified first:
-   an unchanged round trip reproduced the original file byte for byte), so the entry and the comma
-   before it are the only difference. The file went from 40,377 bytes (SHA-256 `c51455f9...`) to
-   40,290 bytes (`5b11d7af5e7d6f8231c46c9e6b720dbff376ee739c75627ce6e6161352c2eea3`).
+   428 prefab names exercise the same function. (SeedLab's gate still words this check as "428/428
+   prefab names and seed texts hash identically": its code is vendored unmodified, but no seed text
+   remains.) The removal was made by loading the file and writing it back with the same formatting
+   (verified first: an unchanged round trip reproduced the original file byte for byte), so the
+   entry and the comma before it are the only difference. The file went from 40,377 bytes (SHA-256
+   `c51455f9...`) to 40,290 bytes (`5b11d7af5e7d6f8231c46c9e6b720dbff376ee739c75627ce6e6161352c2eea3`).
 2. **`manifest-natives.json` - `files[]` rewritten, one note added.** The recorded list did not match
    this folder: it named files under a `goldens/` prefix that does not exist here, listed a
    `seed-input.json` that is not included (it describes a world, not a native function), left out

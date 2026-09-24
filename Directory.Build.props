@@ -26,5 +26,7 @@
 
     <Authors>DoomMachine</Authors>
     <Product>SeedLab machine report</Product>
+    <!-- Shown in every binary's file properties (LegalCopyright); the same line as LICENSE. -->
+    <Copyright>Copyright (c) 2026 DoomMachine</Copyright>
   </PropertyGroup>
 </Project>

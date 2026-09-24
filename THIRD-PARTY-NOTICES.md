@@ -1,8 +1,10 @@
 # Third-party notices
 
-This repository and the package built from it contain third-party material in three places: the
-FastNoise code inside the vendored SeedLab source, Microsoft's .NET runtime (bundled, unmodified,
-in the package's `dotnet\` folder) and, in `natives\`, values recorded from Valheim's code.
+This repository and the package built from it contain third-party material in four places: the
+FastNoise code inside the vendored SeedLab source; Microsoft's .NET runtime (bundled, unmodified,
+in the package's `dotnet\` folder); SeedLab's re-creation of Valheim's world-generation code and of
+the Unity engine functions it calls (the vendored source under `vendor/src`, compiled into the
+package's `app\` folder); and, in `natives\`, values recorded from Valheim's code.
 
 ## FastNoise
 
@@ -1573,8 +1575,18 @@ SOFTWARE.
 
 Valheim is developed by Iron Gate AB and published by Coffee Stain; "Valheim" is a trademark of
 Iron Gate AB. This project is independent and is not affiliated with or endorsed by Iron Gate or
-Coffee Stain. It contains no game assets and no game files. The `natives\` folder holds values that
-SeedLab's dumper recorded from the game's own code while it ran (Perlin noise samples, random-number
-traces, maths-library results and string hashes, plus the names of the prefabs those hashes were
-taken of), included so that the port can be checked against the game on a machine without it; see
-`natives/README.md`.
+Coffee Stain. It contains no game assets and no game files.
+
+The vendored SeedLab source reimplements the game's world generation from the shipped game code in
+order to reproduce it offline: `vendor/src/SeedLab.WorldGen/WorldGeneratorPort.cs` and `DUtils.cs`
+port Valheim's `WorldGenerator` and `DUtils`, and `vendor/src/SeedLab.Seeds/StableHash.cs` its
+`GetStableHashCode`, many statements transcribed as the decompiler printed them;
+`vendor/src/SeedLab.WorldGen/Unity/` re-creates the Unity engine functions world generation calls
+(`Mathf.PerlinNoise`, `UnityEngine.Random`, and `Mathf` and `Vector2` arithmetic), transcribed
+from the shipped Unity player and engine module. Unity is a trademark of Unity Technologies; this
+project is not affiliated with it either.
+
+The `natives\` folder holds values that SeedLab's dumper recorded from the game's own code while it
+ran (Perlin noise samples, random-number traces, maths-library results and string hashes, plus the
+names of the prefabs those hashes were taken of), included so that the port can be checked against
+the game on a machine without it; see `natives/README.md`.
