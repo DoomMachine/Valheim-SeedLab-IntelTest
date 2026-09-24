@@ -171,7 +171,7 @@ namespace SeedLab.MachineReport
             Console.WriteLine("Checks that this PC reproduces SeedLab's world-generation arithmetic exactly, at");
             Console.WriteLine("every instruction-set level, and measures its speed. It reads nothing but CPU and");
             Console.WriteLine("Windows facts, installs nothing, and writes only seedlab-machine-report.txt here.");
-            Console.WriteLine("It takes about 5 to 15 minutes. Please leave the PC alone until it says it is done.");
+            Console.WriteLine("It takes about 3 to 5 minutes. Please leave the PC alone until it says it is done.");
             Console.WriteLine();
 
             Console.CancelKeyPress += (_, e) =>

@@ -1,7 +1,7 @@
 @echo off
 rem SeedLab machine report.
 rem Runs the checks with the .NET runtime in this folder (nothing is installed) and writes
-rem seedlab-machine-report.txt beside this file. Takes about 5 to 15 minutes.
+rem seedlab-machine-report.txt beside this file. Takes about 3 to 5 minutes.
 setlocal
 set "PKG=%~dp0"
 set "DOTNET_ROOT=%PKG%dotnet"

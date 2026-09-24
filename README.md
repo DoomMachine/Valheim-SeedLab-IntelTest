@@ -27,7 +27,7 @@ the game on them. Nothing is installed: the package carries its own copy of .NET
    protected your PC"* box (SmartScreen), click **More info**, then **Run anyway**: the program is new
    and not code-signed, which is all that box means. If an *"Open File - Security Warning"* box asks,
    click *Run*.
-6. **Wait about 5 to 15 minutes.** A console window shows the progress; leave the PC alone meanwhile.
+6. **Wait about 3 to 5 minutes.** A console window shows the progress; leave the PC alone meanwhile.
    When it says *Finished*, press a key to close it.
 7. **Send back `seedlab-machine-report.txt`** from the same folder. That one file is all that is
    needed. It is plain text - open it in Notepad first if you like.

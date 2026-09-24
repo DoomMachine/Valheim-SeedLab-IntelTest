@@ -38,7 +38,7 @@ Run it
 5. If a blue "Windows protected your PC" box appears (SmartScreen), click "More info" and then
    "Run anyway". It appears because the program is new and not signed, not because anything is
    wrong. If an "Open File - Security Warning" box asks, click "Run".
-6. A black window shows the progress. It takes about 5 to 15 minutes; please leave the PC alone
+6. A black window shows the progress. It takes about 3 to 5 minutes; please leave the PC alone
    meanwhile. When it says "Finished", press any key to close the window.
 
 Send it back
